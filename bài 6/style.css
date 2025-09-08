@@ -1,0 +1,13 @@
+header{
+    display:flex;
+    background-color:black;
+    color:white;
+}
+.timkiem{
+    display:flex;
+    margin-left:400px;
+}
+.search{
+    background-color:rgba(128, 128, 128, 0.596);
+    border:1px solid grey;
+}

@@ -1,0 +1,374 @@
+body{
+    margin:0px;
+}
+nav{
+    background-color:#0c4ca3;
+    color:white;
+}
+
+ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+li{
+    padding:15px;
+}
+
+.border{
+    border-right:1px solid grey;
+}
+
+.danhmuc-lienket{
+    color:white;
+    text-decoration: none;
+    font-family: Roboto, Arial, Tahoma;
+}
+
+.banner-qc{
+    display:flex;
+    justify-content:center;
+    margin:10px 0px;
+}
+
+.qc{
+    display:flex;
+    justify-content:space-between;
+}
+
+header{
+    border-bottom: 15px solid #f1f1f2;
+}
+
+main{
+    font-family: Roboto, Arial, Tahoma;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header{
+    display:flex;
+    font-weight: bold;
+    justify-content:space-between;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    padding-bottom:0px;
+    margin:0 auto;
+    width:61%;
+}
+.header h1{
+    color:#024da1;
+    font-size: 25px;
+    font-weight: bold;
+    margin:0px;
+    padding-bottom:0px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+
+} 
+.header a{
+    text-decoration: none;
+    color:grey;
+} 
+
+
+.tintuc{
+   display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content:center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width:61%;
+    gap:10px;
+}
+.anh img{
+    display:flex;
+    justify-content:center;
+    height:auto;
+}
+.anh ul{
+    display:block; 
+    flex-direction:columm;
+}
+.anh li{
+    list-style-type: square;
+    padding-left:3px;
+}
+.anh li::marker{
+    font-size: 25px;
+    color: #298ade;
+}
+
+
+.anh-ngang{
+    display:flex;
+    justify-content:center;
+    padding:15px;
+}
+.t-anh{
+    border:1px solid grey;
+}
+.lienket{
+    border:1px solid grey;
+}
+
+.thongbao{
+    background-color:rgb(239, 236, 236);
+}
+.thongbao1{
+    font-weight: bold;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom:0px;
+    margin:0 auto;
+    width:61%;
+}
+.thongbao h1{
+    color:#024da1;
+    font-size: 25px;
+    padding-bottom:5px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+    margin:0px;
+}
+.anhtb{
+    display:flex;
+    justify-content:center;
+    margin:15px;
+    margin:0 auto;
+    width:61%;
+}
+.anh{
+    display:block;
+}
+.anh img{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.anhtb ul{
+    display:block;
+}
+.anhtb h3{
+    color:blue;
+}
+
+.detai{
+    display:flex;
+    color:#024da1;
+    font-weight: bold;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom:0px;
+    margin:15px auto;
+    width:61%;
+}
+.chude{
+    display:flex;
+}
+.detai1{
+    display:flex;
+    margin:0px;
+}
+.detai1 h1{
+    font-size: 25px;
+    padding-bottom:5px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+    margin:0px;
+}
+.detai a{
+    text-decoration: none;
+    color:grey;
+
+}
+
+.anhts{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content:center;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap:20px;
+}
+.attts{
+    width:100%;
+}
+
+.ten{
+    display:flex;
+    font-weight: bold;
+    justify-content:space-between;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    padding-bottom:0px;
+    margin:15px auto;
+    width:61%;
+
+}
+.hoatdongsv h1{
+    color:#024da1;
+    margin: 0px;
+    font-size:25px;
+    padding-bottom:0px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+}
+.hoatdongsv a{
+    text-decoration:none;
+    color:grey;
+}
+.anhhdsv{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content:center;
+    max-width: 1200px;
+    margin: 15px auto;
+    gap:10px;
+}
+.anhhd ul{
+    display:block; 
+    flex-direction:columm;
+}
+.anhhd li{
+    list-style-type: square;
+    padding-left:3px;
+}
+.anhhd li::marker{
+    font-size: 25px;
+    color: #298ade;
+}
+
+.doitac{
+    margin:0 auto;
+    width:61%;
+}
+.doitac1{
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom:0px;
+}
+.doitac h1{
+    color:#024da1;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom:0px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+    margin:0px;
+}
+.anhdt{
+    display:flex;
+    justify-content:center;
+    margin:15px auto;
+    width:60%;
+}
+
+.cc{
+    background-color:blue;
+    color:white;
+}
+.tg{
+    display:flex;
+    justify-content:space-between;
+}
+.nd{
+    display:block;
+}
+
+.Trian {
+    display:flex;
+    justify-content: space-between;
+    width: 61%;
+    margin: 0 auto;
+    gap: 25px;  
+    background-color: black;
+    color: white;
+}
+.tieude{
+    padding-bottom:10px;
+    margin:0px;
+    border-bottom: 3px #0c4ca3 solid ;
+    display:inline-block;
+}
+.video {                   
+    padding: 10px;
+    border-right: 1px dotted #b4b5ba;
+}
+.video h3 {
+    font-weight: normal; 
+    font-size: 22px;
+    padding-left: 20px;
+    border-bottom: 1px dotted #b4b5ba;
+    padding-bottom: 10px;    
+}
+.border2 {
+    width: 100%;
+    border-bottom: 1px dotted #b4b5ba;
+    border-right: none;
+}
+.media {
+    padding: 10px;
+}
+.media h3 {
+    font-weight: normal;
+    font-size: 22px;
+    border-bottom: 100%;
+    border-bottom: 1px dotted #b4b5ba;
+    padding-bottom: 10px;
+}
+.media ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* xếp dọc */
+    font-size: 22px;
+}
+.media li {
+    list-style: none;
+    padding: 20px 0;     
+}
+.media a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    font-family: Roboto, Arial, Tahoma, Veranda;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    background-color: #024da1;
+}
+.Cuoi {
+    display:flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+.xanh {
+    color: white;
+}
+.xanh1 {
+    display:flex;
+    justify-content: space-between;
+    width: 110%;
+    border-bottom: 2px solid white;
+}
+.xanh1-1 {
+    text-align: right;
+    line-height: 1px;
+}
+h2 {
+    font-weight: normal; 
+}
+
+
+
+
+
