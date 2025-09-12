@@ -1,0 +1,226 @@
+body{
+    background-color:black;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    background-color:black;
+    color:white;
+    height:40px;
+}
+.div1{
+}
+.div2{
+    display:flex;
+}
+.div2 i{
+    margin:5px;
+    padding:5px;
+}
+
+.div2 input{
+    margin:0px;
+}
+form input{
+    background-color:rgba(128, 128, 128, 0.596);
+    border-radius:10px;
+    padding:5px;
+    color:white;
+}
+.div3{
+    display:flex;
+    gap:15px;
+}
+
+main{
+    display:grid;
+    grid-template-columns:300px 650px 1fr;
+    color:white;
+    gap:5px;
+}
+
+.cot1{
+    background-color:rgb(70, 60, 60);
+    border-radius:4px;
+}
+.dong1-1{
+    display:flex;
+    justify-content:space-between;
+}
+.dong1-1 h3{
+    font-size:16px;
+    margin:10px;
+}
+.dong1-1 a{
+    text-decoration:none;
+    color:white;
+    margin:10px auto;
+    background-color:rgba(128, 128, 128, 0.598);
+    border-radius:8px;
+    padding:4px;
+    height:15px;
+}
+.kyhieu{
+    position:relative;
+    width:20px;
+    height:20px;
+}
+.kyhieu::after{
+    border-width:0 2px 2px 0;
+}
+
+.dong2-1{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.dong2-1 a{
+    color:white;
+    background-color:rgba(128, 128, 128, 0.598);
+    text-decoration:none;
+    border-radius:8px;
+    padding:5px;
+}
+
+.dong3-1{
+    margin:5px;
+}
+.dong3-1 input{
+    background-color:rgba(128, 128, 128, 0.598);
+    justify-content:center;
+    width:95%;
+    border-radius:8px;
+}
+input::placeholder{
+    color:white;
+    font-size:12px;
+}
+
+.theloai{
+    padding:10px;
+}
+.atl{
+    display:flex;
+}
+.atl img{
+    width:30px;
+    margin-bottom:10px;
+}
+.atl a{
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+
+
+.cot2{
+    background-color:rgb(70, 60, 60);
+    border-radius:4px;
+}
+/* dòng 1 */
+.dong1-2{
+    margin:10px;
+}
+.dong1-2 a{
+    text-decoration:none;
+    color:white;
+    background-color:rgba(128, 128, 128, 0.598);
+    border-radius:8px;
+    padding:5px;
+}
+/* dòng 2 */
+.thumuc1{
+    overflow:hidden;
+    margin:10px;
+    gap:5px;
+}
+.thumuc img{
+    width:30px;
+}
+.thumuc a{
+    text-decoration:none;
+    color:white;
+    font-size:12px;
+    align-items:center;
+    justify-content:center;
+    text-overflow:ellipsis;
+    height:20px;
+}
+.atm1{
+    display:flex;
+    box-sizing:border-box;
+    gap:10px;
+    margin-bottom:10px;
+}
+.atm2{
+    display:flex;
+    box-sizing:border-box;
+    gap:10px;
+    margin-bottom:10px;
+}
+.atm{
+    flex:1;
+    background-color:rgba(128, 128, 128, 0.598);
+    display:flex;
+    border-radius:8px;
+}
+
+
+.dong3-2{
+    margin:15px;
+}
+.dong3-2 h3{
+    color:grey;
+    font-size:8px;
+}
+.dong4-2{
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+}
+.dong4-2 h2{
+    margin:0;
+    font-size:16px;
+}
+.dong4-2 p{
+    color:grey;
+    font-size:12px;
+}
+
+.tmkel{
+    display:flex;
+    overflow:hidden;
+    box-sizing:border-box;
+    margin:10px;
+    gap:20px;
+}
+.atmkel{
+    flex:1;
+    background-color:rgba(128, 128, 128, 0.598);
+}
+.tmkel img{
+    width:100%;
+}
+
+
+
+.cot3{
+    background-color:rgb(70, 60, 60);
+    border-radius:4px;
+}
+.dong1-3 h3{
+    font-size:16px;
+    margin:10px auto;
+    padding:0 0 0 10px;
+}
+.dươianh{
+    margin:5px;
+}
+.duoianh a{
+    text-decoration:none;
+    color:white;
+    background-color:rgba(128, 128, 128, 0.598);
+    border-radius:8px;
+    gap:5px;
+}
