@@ -1,0 +1,222 @@
+body{
+    background-color:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    background-color:black;
+    height:65px;
+}
+.header1{
+    display:flex;
+    width:90%;
+    margin:5px auto;
+    align-items:center;
+}
+.trangchu img{
+    width:150px;
+    height:50px;
+}
+nav{
+    display:flex;
+}
+.trangchu2{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:20px;
+}
+.trangchu2 a{
+    text-decoration:none;
+    color:white;
+}
+.muagoi{
+    background-color:rgba(255, 0, 0, 0.806);
+    padding:5px 20px 10px 20px;
+    border-radius:8px;
+}
+
+
+
+
+main{
+    background-color:black;
+    width:90%;
+    overflow:hidden;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+.anh1 img{
+    border-radius:10px;
+    width:100%;
+    margin-bottom:15px;
+}
+.anh2 img{
+    border-radius:10px;
+    width:100%;
+    height:600px;
+    margin-bottom:50px;
+}
+.anh3 img{
+    border-radius:10px;
+    width:100%;
+    height:100px;
+}
+/* Chỉnh ảnh */
+/* 
+  ảnh Loại 1
+    - Cày phim mỗi ngày
+    - Phim bộ hot
+    - Anime hot
+    - Top phim siêu nhân Nhật Bản
+    - Phim Việt Nam không thể bỏ lỡ
+    - Phim hay, bé xem mê say
+    - Giai điệu thời thanh xuân
+    - Truy tìm chân tướng
+    - Phim ngắn - Xem là yêu
+    - Phim lẻ nổi bật
+    - Phim lồng tiếng/thuyết minh
+    - Chỉ có trên FPT Play
+    - Top 10 bộ phim xu hướng
+    - Phim bộ Việt Nam đặc sắ
+    - Siêu phẩm Thái Lan
+    - Điện ảnh Châu Á hay nhất
+    - Điện ảnh Âu Mỹ đỉnh cao
+    - Anime mùa hè 2025
+    -  Tiếng cười trẻ thơ
+    - Xem là phải bật cười
+    - Phim chiếu rạp
+    - Mùa thu lộng gió
+*/
+.anhtm1{
+    display:flex;
+    gap:10px;
+    /* overflow-x: scroll; */
+}
+.anhc1{
+    flex:1;
+}
+.anhc1 img{
+    width:200px;
+    height:300px;
+    border-radius:5px;
+}
+
+/* 
+  Ảnh Loại 2
+    - Mới ra mắt
+    - Giải trí tổng hợp mới nhất
+    - Khung trời kỷ niệm
+    - Esports
+*/
+.anhtm2{
+    display:flex;
+    gap:10px;
+    /* overflow-x: scroll; */
+}
+.anhc2{
+    flex:1;
+}
+.anhc2 img{
+    width:400px;
+    height:220px;
+    border-radius:5px;
+}
+
+/* 
+  Ảnh loại 3
+    - Sự kiện thể thao
+    - Danh mục
+    - Thể thao
+    - Âm nhạc
+    - Thiếu nhi
+    - Dành riêng cho bạn
+    - Karaoke
+    - Học tập
+    - Podcast
+*/
+.anhtm3{
+    display:flex;
+    gap:10px;
+    /* overflow-x: scroll; */
+}
+.anhc3{
+    flex:1;
+}
+.anhc3 img{
+    width:230px;
+    height:140px;
+    border-radius:5px;
+}
+
+/* 
+  Ảnh loại 4
+    - Sắp công chiếu
+ */
+ .anhtm4{
+    display:flex;
+    gap:10px;
+    /* overflow-x: scroll; */
+}
+.anhc3{
+    flex:1;
+}
+.anhc4 img{
+    width:600px;
+    height:350px;
+    border-radius:5px;
+}
+
+.chude{
+    margin:20px;
+}
+.tencd{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:5px;
+}
+.tencd a{
+    text-decoration:none;
+    color:white;
+}
+
+
+
+
+footer{
+    background-color:black;
+    width:90%;
+    overflow:hidden;
+    margin:2px auto;
+}
+.phan1{
+    display:flex;
+    justify-content:space-between;
+    margin:1px auto;
+    gap:100px;
+    border-bottom:2px solid grey;
+    width:100%;
+}
+.cot1{
+    flex:1;
+}
+.cot1 img{
+    width:150px;
+}
+footer nav{
+    display:block;
+}
+footer ul{
+    padding-left: 0;
+}
+.icon{
+    display:flex;
+}
+.lienhe{
+    margin:50px;
+}
+.phan2{
+    display:flex;
+}
