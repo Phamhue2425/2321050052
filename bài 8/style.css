@@ -1,47 +1,90 @@
 
 header{
     color:blue;
-    justify-content:center;
-}
-header h1{
-    justify-content:center;
-    align-items:center;
-    margin-left: 550px;
+    text-align:center;
 }
 
 main{
-    width:400px;
-    height:500px;
+    width:30%;
+    margin:2px auto;
+    margin-left:px;
+    background-color:rgba(240, 248, 255, 0.678);
+    text-align:center;
     justify-content:center;
-    background-color:rgba(128, 128, 128, 0.075);
-    margin:0 auto;
-    margin-bottom:50px;
+    border:1px solid aliceblue;
 }
-.tieude h2{
-    justify-content:center;
-    margin: 0 auto;
+.hang1 h2,p {
+    margin:0;
 }
-.tieude p{
-    justify-content:center;
+.hang1 p{
+    margin-bottom:10px;
+}
+.hang1{
+    border-bottom:1px solid grey;
 }
 .name{
     display:flex;
-    justify-content:space-between;
+    margin:10px;
+    gap:5px;
 }
-.ntn{
+input[type="text"]{
+    width:91.5%;
+    border:1px solid grey;
+    border-radius:5px;
+    padding:5px;
+}
+.birth p{
+    text-align:initial;
+    padding:10px;
+}
+.ngaythangnamsinh{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    gap:10px;
 }
-.sign{
-    border-radius:8px;
-}
-sign h2{
-    justify-content:center;
+select{
+    padding:5px;
+    width:100px;
+    border-radius:5px;
 }
 
-footer{
-    width:70%;
+.gender p{
+    text-align: initial;
+    padding:5px;
 }
-.ngonngu{
-    border-bottom:1px solid grey;
+.luachon{
+    display:flex;
+    gap:10px;
+    margin:10px;
 }
+.vien{
+    flex:1;
+    display:flex;
+    border:1px solid grey;
+    border-radius:5px;
+    justify-content: space-between;
+}
+
+input[type="password"]{
+    width:91.5%;
+    border:1px solid grey;
+    border-radius:5px;
+    padding:5px;
+    margin-top:5px;
+}
+.noidung{
+    text-align:initial;
+    margin:10px;
+    font-size:11px;
+}
+.sign{
+    justify-content: center;
+}
+.sign h2{
+    border:1px solid grey;
+    background-color:rgb(115, 205, 115);
+    width:40%;
+    border-radius:5px;
+    margin:5px auto;
+}
+
