@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        let DonHang = {
+            MaDonHang:"08347582",
+            ThongTinKhachHang: {
+                HoTen: "Phạm Thị Huế",
+                SoDienThoai: "0393162205",
+                TrangThaiThanhVienThanThiet: true
+            },
+            DanhSachSanPham: {
+                Sp1: {
+                    MaSanPham:"20490830",
+                    TenSanPham: "Cà Phê",
+                    SoLuong: 2,
+                    GiaTien: 75000,
+                },
+                Sp2: {
+                    MaSanPham:"20490834",
+                    TenSanPham: "matcha",
+                    SoLuong: 5,
+                    GiaTien: 75000,
+                },
+                Sp3: {
+                    MaSanPham:"20490837",
+                    TenSanPham: "Trà sữa",
+                    SoLuong: 3,
+                    GiaTien: 50000
+                }
+            },
+            TrangThaiThanhToan: true,
+            DiaChiGiaoHang:"Hà Nội"
+        }
+        let GiaTriSp1 = DonHang.DanhSachSanPham.Sp1.SoLuong * DonHang.DanhSachSanPham.Sp1.GiaTien;
+        let GiaTriSp2 = DonHang.DanhSachSanPham.Sp2.SoLuong * DonHang.DanhSachSanPham.Sp2.GiaTien;
+        let GiaTriSp3 = DonHang.DanhSachSanPham.Sp3.SoLuong * DonHang.DanhSachSanPham.Sp3.GiaTien;
+        TongGiaTriDonHang = GiaTriSp1 +  GiaTriSp2 + GiaTriSp3; 
+        document.writeln("Tổng giá trị đơn hàng là: " + TongGiaTriDonHang);
+
+
+        //String -  chiều dài
+        let HoTen = "Phạm thị Huế";
+        document.writeln("<br>" + HoTen.length + "<br>");
+
+        let MyString = "Hello Hue";
+        document.writeln(MyString[0] + "<br>" + MyString[4] + "<br>");
+        document.writeln(MyString.slice(1,4) + "<br>");                         //cắt
+        document.writeln(MyString.replace("Hello", "Hi") + "<br>");             //Thay thế chuỗi
+        document.writeln(MyString.toLocaleLowerCase() + "<br>");                //thay đổi chữ hoa - chữ thường
+        document.writeln(MyString.indexOf("i") + "<br>");                       // Kiểm tra chuỗi có ký tự hay ko --> Nếu có trả về vị trí --> không có trả về -1
+        document.writeln(MyString.includes("e") + "<br>")                       // Kiểm tra chuỗi có ký tự hay ko --> kết quả trả về là true, false
+        document.writeln(MyString.split('e') + "<br>")                          // Tách chuỗi
+        document.writeln(MyString.startsWith('Hello') + "<br>")                 //Kiểm tra chuỗi có bắt đầu bằng từ đấy không
+   
+        // Number
+        var pi=3.14159;
+        ketqua = pi.toFixed(2)                                                  //Làm tròn chữ số thập phân nhất định
+        document.writeln(ketqua + "<br>")
+        document.writeln(isNaN(10) + "<br>")                                    //về tìm hiểu               
+        
+        let ToDay = new Date();                                                 // Ngày giờ  hiện tại - Có thể tạo ngày giờ  mong muốn
+        //let ToDay = new Date(2023-4-2)
+        document.writeln(ToDay + "<br>")              
+        document.writeln(ToDay.getFullYear() + "<br>")                          //Lấy năm
+        document.writeln(ToDay.getMonth() + "<br>")                             //Lấy tháng
+        document.writeln(ToDay.getDate() + "<br>")                               //Lấy ngày
+   </script>
+</body>
+</html>
