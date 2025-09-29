@@ -69,7 +69,100 @@
         document.writeln(ToDay + "<br>")              
         document.writeln(ToDay.getFullYear() + "<br>")                          //Lấy năm
         document.writeln(ToDay.getMonth() + "<br>")                             //Lấy tháng
-        document.writeln(ToDay.getDate() + "<br>")                               //Lấy ngày
-   </script>
+        document.writeln(ToDay.getDate() + "<br>")                              //Lấy ngày
+   
+        
+        //Mảng
+        let arr = [1,2,3,4,'a','b','c',2,3];
+        let ten = 'ten';
+        let ThongTin = {
+            ten: ten
+        }
+        document.writeln(typeof(ThongTin) + "<br>")
+        document.writeln(Array.isArray(arr) + "<br>")                            //Kiểm tr có phải mảng ko
+        document.writeln(arr.length + "<br>")                                    //Kiểm tra độ dài của mảng
+        document.writeln(arr[2] + "<br>")                                        // Lấy ra phần tử của mảng
+        document.writeln(arr.indexOf(3) + "<br>")                                // Trả ra vị trí xuất hiện đầu tiên của phần tử
+        document.writeln(arr.lastIndexOf(3) + "<br>")                            // Trả ra vị trí xuất hiện cuối cùng của phần tử  
+        arr[3] = 6                                                               // thay đổi phần tử trong mảng
+        document.writeln(arr + "<br>")     
+
+        // let a,b,c,d;
+        // a = [1,2,3];
+        // b = "JavaScript";
+        // c = [42,"JS"];
+        // d = a.concat(b,c)                                                          // Nối mảng
+        // //d = d.join("-")                                                          // Chuyển mảng thành chuỗi, mỗi phần tử cách nhau bằng dấu "-,..."
+        // d.pop();                                                                   //Xóa phần tử cuối cùng trong mảng
+        // d.push("Huế");                                                             // Thêm phần tử vào cuối danh sách
+        // //d.reverse();                                                               // Đảo lại mảng
+        // d.shift();                                                                 // Xóa phần tử đầu tiên của mảng
+        // //d.unshift()
+        // document.writeln(d + "<br>")   
+        
+        
+        let so = "10000000000000001";
+        let SoCuoi =  parseInt(so[so.length - 1]);
+        if(SoCuoi % 2 == 0){
+            document.writeln(so + " là số chẵn")
+        }
+        else{
+            document.writeln(so + " là số lẻ")
+        }
+        document.writeln("<br>")
+
+        let now = new Date().getHours();
+        //debugger                                            //cách sửa code
+        // 5 --> 10: Chào buổi sáng
+        // 10 --> 13: Chào buổi trưa
+        // 13 --> 17: Chào buổi chiều
+        // 17 --> 22: Chào buổi tối
+        // còn lại: Chào buổi đêm
+        if(now>=5 && now<10){
+            document.writeln("Chào buổi sáng")
+        }
+        else if(now=>10 && now<13){
+            document.writeln("Chào buổi trưa")
+        }
+        else if(now=>13 && now<17){
+            document.writeln("Chào buổi chiều")
+        }
+        else if(now=>17 && now<22){
+            document.writeln("Chào buổi tối")
+        }
+        else{
+            document.writeln("Chào buổi đêm")
+        }
+
+
+        document.writeln("<br>")
+        //c,b,c
+        // tổng = a * 0.6 + b * 0.3 + c * 0.1
+        // tổng nằm trong khoảng từ 8 đến 10: điểm AbortController
+        // 7 --> 8: B
+        // 5 --> 7: C
+        // 4 --> 5: D
+        // Nhỏ hơn 4: F
+        let a,b,c;
+        a = 9;
+        b = 8;
+        c = 10;
+        tong = a * 0.6 + b * 0.3 + c * 0.1;
+        if(tong>=8 && tong<=10){
+            document.writeln("điểm AbortController")
+        }
+        else if(tong>=7 && tong<8){
+            document.writeln("B")
+        }
+        else if(tong>=5 && tong<7){
+            document.writeln("C")
+        }
+        else if(tong>=4 && tong<5){
+            document.writeln("D")
+        }
+        else{
+            document.writeln("F")
+        }
+    </script>
 </body>
 </html>
