@@ -147,22 +147,28 @@
         a = 9;
         b = 8;
         c = 10;
-        tong = a * 0.6 + b * 0.3 + c * 0.1;
-        if(tong>=8 && tong<=10){
-            document.writeln("điểm AbortController")
-        }
-        else if(tong>=7 && tong<8){
-            document.writeln("B")
-        }
-        else if(tong>=5 && tong<7){
-            document.writeln("C")
-        }
-        else if(tong>=4 && tong<5){
-            document.writeln("D")
+        if(a>=0 && b>=0 && c>=0 && a<=10 && b<=10 && c<=10){
+            tong = a * 0.6 + b * 0.3 + c * 0.1;
+            if(tong>=8 && tong<=10){
+                document.writeln("điểm AbortController")
+            }
+            else if(tong>=7 && tong<8){
+                document.writeln("B")
+            }
+            else if(tong>=5 && tong<7){
+                document.writeln("C")
+            }
+            else if(tong>=4 && tong<5){
+                document.writeln("D")
+            }
+            else{
+                document.writeln("F")
+            }
         }
         else{
-            document.writeln("F")
+            document.writeln("Điểm không hợp lệ" + "<br>")
         }
+
     </script>
 </body>
 </html>
