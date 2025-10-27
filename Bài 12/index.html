@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // let HoTen = prompt("Họ và tên: ")
+        // document.writeln(HoTen + "<br>")
+
+        // function KhongThamSo(){
+        //     document.writeln(HoTen)
+        // }
+
+        // let so = parseInt(prompt("Nhập số"))
+        // function CoThamSo(so){
+        //     for(let i=0; i<10; i++){
+        //         document.writeln(i)
+        //     }
+        // }
+        // KhongThamSo()
+        // CoThamSo(so)
+
+
+    </script>
+
+    <h1>Tính Tổng</h1>
+    <div>
+        Nhập số thứ Nhất:
+        <input type="number" id="SoThuNhat">
+    </div>
+    <div>
+        Nhập số thứ Hai:
+        <input type="number" id="SoThuHai">
+    </div>
+    <div>
+        <button onclick="TinhTong()">Tính Tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="KetQua" class="ketqua">
+    </div>
+
+    <script>
+        function TinhTong(){
+            let SoThuNhat = parseFloat(document.getElementById("SoThuNhat").value)
+            let SoThuHai = parseFloat(document.getElementById("SoThuHai").value)
+            let CanhBao = "";
+            if(SoThuNhat){
+                CanhBao += "Vui lòng nhập lại số thứ Nhất"
+            }
+            if(SoThuHai){
+                CanhBao += "Vui lòng nhập lại số thứ Hai"
+            }
+
+            if(CanhBao){
+                alert(CanhBao)
+            }
+
+            let tong = SoThuNhat + SoThuHai
+            document.getElementById("KetQua").value = tong
+        }
+
+    </script>
+</body>
+</html>

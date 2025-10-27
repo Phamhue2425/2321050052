@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    </script>
+
+    <h1>Tính Điểm chữ</h1>
+    <h2>Biết tổng: A*0.6 + B*0.3 + C*0.1</h2>
+    <div>
+        Nhập điểm A:
+        <input type="number" id="DiemA">
+    </div>
+    <div>
+        Nhập điểm B:
+        <input type="number" id="DiemB">
+    </div>
+    <div>
+        Nhập điểm C:
+        <input type="number" id="DiemC">
+    </div>
+    <div>
+        <button onclick="TinhTong()">Tính Tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="KetQua" class="ketqua">
+    </div>
+
+    <script>
+        function TinhTong(){
+            let DiemA = parseFloat(document.getElementById("DiemA").value)
+            let DiemB = parseFloat(document.getElementById("DiemB").value)
+            let DiemC = parseFloat(document.getElementById("DiemC").value)
+            let CanhBao = "";
+            if(!DiemA){
+                CanhBao += "Vui lòng nhập lại điểm A"
+            }
+                
+            if(!DiemB){
+                CanhBao += "Vui lòng nhập lại điểm B"
+            }
+
+            if(!DiemC){
+                CanhBao += "Vui lòng nhập lại điểm C"
+            }
+
+            if(CanhBao){
+                alert(CanhBao)
+            }
+            if(DiemA>=0 && DiemB>=0 && DiemC>=0 && DiemA<=10 && DiemB<=10 && DiemC<=10){
+                let tong = DiemA*0.6 + DiemB*0.3 + DiemC*0.1
+                document.getElementById("KetQua").value = tong
+            }
+            else{
+            document.writeln("Điểm không hợp lệ" + "<br>")
+            }
+        }
+
+    </script>
+</body>
+</html>
