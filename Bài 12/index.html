@@ -32,26 +32,32 @@
         Nhập số thứ Nhất:
         <input type="number" id="SoThuNhat">
     </div>
+    <br>
     <div>
         Nhập số thứ Hai:
         <input type="number" id="SoThuHai">
     </div>
+    <br>
     <div>
-        <button onclick="TinhTong()">Tính Tổng</button>
+        <button onclick="TinhTong('tong')">Tính Tổng</button>
+        <button onclick="TinhTong('hieu')">Tính Hiệu</button>
+        <button onclick="TinhTong('tich')">Tính Tich</button>
+        <button onclick="TinhTong('thuong')">Tính Thương</button>
     </div>
+    <br>
     <div>
         Kết quả: <input type="number" id="KetQua" class="ketqua">
     </div>
 
     <script>
-        function TinhTong(){
+        function TinhTong(PhepTinh){
             let SoThuNhat = parseFloat(document.getElementById("SoThuNhat").value)
             let SoThuHai = parseFloat(document.getElementById("SoThuHai").value)
             let CanhBao = "";
-            if(SoThuNhat){
+            if(!SoThuNhat){
                 CanhBao += "Vui lòng nhập lại số thứ Nhất"
             }
-            if(SoThuHai){
+            if(!SoThuHai){
                 CanhBao += "Vui lòng nhập lại số thứ Hai"
             }
 
@@ -59,8 +65,19 @@
                 alert(CanhBao)
             }
 
-            let tong = SoThuNhat + SoThuHai
-            document.getElementById("KetQua").value = tong
+            if(PhepTinh == 'tong'){
+                KetQua = SoThuNhat + SoThuHai
+            }
+            else if(PhepTinh == 'hieu'){
+                KetQua = SoThuNhat - SoThuHai
+            }
+            else if(PhepTinh == 'tich'){
+                KetQua = SoThuNhat * SoThuHai
+            }
+            else{
+                KetQua = SoThuNhat / SoThuHai
+            }
+            document.getElementById("KetQua").value = KetQua
         }
 
     </script>

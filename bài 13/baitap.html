@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+
+<body>
+    <h1>Tính chỉ số BMI</h1>
+    <h2>Công thức: Cân nặng / ( Chiều cao * Chiều cao)</h2>
+    <div>
+        Cân nặng:
+        <input type="number" id="CanNang">
+    </div>
+    <br>
+    <div>
+        Chiều cao:
+        <input type="number" id="ChieuCao">
+    </div>
+    <br>
+    <div>
+        <button onclick="KiemTra()">Kiểm tra</button>
+    </div>
+    <br>
+    <div>
+        Kết quả:<input type="number" id="KetQua">
+    </div>
+    <br>
+    <div>
+        <button onclick="KiemTraChiSo">Kiểm tra chỉ số BMI</button>
+    </div>
+    <div>
+        <img class="anh" src="meo.jpeg" alt="">
+    </div>
+
+    <script>
+        function KiemTra(){
+            let CanNang = parseFloat(document.getElementById("CanNang").value)
+            let ChieuCao = parseFloat(document.getElementById("ChieuCao").value)
+            let CanhBao = "";
+            if(!CanNang){
+                CanhBao += "Vui lòng nhập lại cân nặng"
+            }
+            if(!ChieuCao){
+                CanhBao += "Vui lòng nhập lại chiều cao"
+            }
+
+            if(CanhBao){
+                alert(CanhBao)
+            }
+            
+            let tinh = CanNang/(ChieuCao*ChieuCao)
+            document.getElementById("KetQua").value = tinh
+            
+        }
+        function KiemTraChiSo(){
+
+        }
+
+    </script>
+</body>
+</html>
