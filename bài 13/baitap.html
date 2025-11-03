@@ -4,38 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
+    <style>
+        header{
+            width:40%;
+            margin:70px auto;
+
+        }
+        .tieude{
+            text-align: center;
+            
+        }
+        .bmi{
+            display:flex;
+            gap: 15px;
+            background-color:antiquewhite;
+        }
+        .ktbmi{
+            margin-top: 75px;
+            margin-left: 35px;
+        }
+        .ktanh{
+            text-align: center;
+        }
+        .anh{
+            margin-top: 4px;
+            width: 200px;
+            height:350px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Tính chỉ số BMI</h1>
-    <h2>Công thức: Cân nặng / ( Chiều cao * Chiều cao)</h2>
-    <div>
-        Cân nặng:
-        <input type="number" id="CanNang">
-    </div>
-    <br>
-    <div>
-        Chiều cao:
-        <input type="number" id="ChieuCao">
-    </div>
-    <br>
-    <div>
-        <button onclick="KiemTra()">Kiểm tra</button>
-    </div>
-    <br>
-    <div>
-        Kết quả:<input type="number" id="KetQua">
-    </div>
-    <br>
-    <div>
-        <button onclick="KiemTraChiSo">Kiểm tra chỉ số BMI</button>
-    </div>
-    <div>
-        <img class="anh" src="meo.jpeg" alt="">
-    </div>
+    <header>
+        <div class="tieude">
+            <h1>Tính chỉ số BMI</h1>
+            
+        </div>
+        <div class="bmi">
+            <div class="ktbmi">
+                <div>
+                    Cân nặng:
+                    <input type="number" id="CanNang">
+                </div>
+                <br>
+                <div>
+                    Chiều cao:
+                    <input type="number" id="ChieuCao">
+                </div>
+                <br>
+                <div>
+                    <button onclick="KiemTra()">Tính BMI</button>
+                </div>
+                <br>
+                <div>
+                    Kết quả:<input type="number" id="KetQua">
+                </div>
+                <br>
+                <div>
+                    <button onclick="KiemTraChiSo()">Kiểm tra chỉ số BMI</button>
+                </div>
+            </div>
+            <div class="ktanh">
+                <img class="anh" src="bmi.jpg" alt="">
+            </div>  
+        </div>
+        
+    </header>
 
     <script>
+        let tinh = 0
+        let anh = document.getElementsByClassName('anh')[0]
         function KiemTra(){
             let CanNang = parseFloat(document.getElementById("CanNang").value)
             let ChieuCao = parseFloat(document.getElementById("ChieuCao").value)
@@ -47,16 +85,51 @@
                 CanhBao += "Vui lòng nhập lại chiều cao"
             }
 
+            if(CanNang <= 0){
+                CanhBao += "Bạn nhập sai cân nặng. Vui lòng nhập lại"
+            }
+            if(ChieuCao <= 0){
+                CanhBao += "Bạn nhập sai chiều cao. Vui lòng nhập lại"
+            }
+
             if(CanhBao){
                 alert(CanhBao)
+                document.getElementById("KetQua").value=null
+                anh.src='bmi.jpg'
+                return tinh = 0;
             }
-            
-            let tinh = CanNang/(ChieuCao*ChieuCao)
+
+            tinh = CanNang/(ChieuCao*ChieuCao)
             document.getElementById("KetQua").value = tinh
-            
+           
         }
         function KiemTraChiSo(){
+            let CanhBao = "";
+            if(tinh == 0){
+                CanhBao += "Vui lòng tính BMI trước"
+            }
+            
+            if(CanhBao){
+                alert(CanhBao)
+                return 0;
+            }
 
+        
+            if(tinh < 18.5){
+                anh.src = 'thieucan.jpg'
+            }
+            else if(tinh >= 18.5 && tinh <= 24.9){
+                anh.src = 'binhthuong.jpg'
+            }
+            else if(tinh >= 25 && tinh <= 29.9){
+                anh.src = 'thuacan.jpg'
+            }
+            else if(tinh >= 30 && tinh <= 39.9){
+                anh.src = 'beophi1.jpg'
+            }
+            else if(tinh >= 40){
+                anh.src = 'baophinang.jpg'
+            }
         }
 
     </script>
