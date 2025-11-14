@@ -6,6 +6,7 @@ body{
 header{
     background-color:black;
     height:65px;
+    margin-top:20px;
 }
 .header1{
     display:flex;
@@ -19,6 +20,7 @@ header{
 }
 nav{
     display:flex;
+    height:30px;
 }
 .trangchu2{
     flex:1;
@@ -51,8 +53,9 @@ main{
     border-radius:10px;
     width:100%;
     margin-bottom:15px;
+    margin-top:30px;
 }
-.banner {
+.anh2 {
     background-image:url('muado.jpg');
     background-size:cover;
     border-radius:10px;
@@ -60,14 +63,33 @@ main{
     margin-bottom:50px;
     position:relative;
 }
-.gioithieu{
+.danhsach-tt{
+    position:absolute;
+    bottom:15px;
+    left: 10px; 
+    color: white; 
+    border-radius: 5px;
+}
+ul{
     display:flex;
     align-items:center;
-    gap:5px;
+    list-style: none;
+    gap:15px;
+    margin-bottom:85px;
 }
-.xemngay{
+.xemngay button{
     background-color: red;
-    color:white
+    position: absolute;
+    width:150px;
+    height:50px;
+    bottom: 5px; 
+    left:10px; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left:35px;
+    margin-bottom:20px;
+    font-size:18px;
 }
 .anh3 img{
     border-radius:10px;

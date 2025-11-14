@@ -3,8 +3,8 @@ let DanhSachPhim = [
         id: 1,
         TenPhim: 'Mưa  đỏ',
         nam: 2025,
-        tuoi: "16T",
-        ThoiLuong: "2 giờ",
+        tuoi: 16,
+        ThoiLuong: 2,
         QuocGia: "Việt Nam",
         poster: 'muado.jpg',
         TheLoai:"Phim Việt Nam"
@@ -12,9 +12,9 @@ let DanhSachPhim = [
     {
         id: 2,
         TenPhim: 'Conan',
-        nam: 1994,
-        tuoi: "31T",
-        ThoiLuong: "45 phút",
+        nam: 2023,
+        tuoi: 10,
+        ThoiLuong: 1.5,
         QuocGia: "Nhật Bản",
         poster: 'conan.jpg',
         TheLoai:"Phim hoạt hình"
@@ -22,9 +22,9 @@ let DanhSachPhim = [
     {
         id: 3,
         TenPhim: 'Panda',
-        nam: 2008,
-        tuoi: "17T",
-        ThoiLuong: "2.5 giờ",
+        nam: 2001,
+        tuoi: 17,
+        ThoiLuong: 1.7,
         QuocGia: "Trung Quốc",
         poster: 'panda.jpg',
         TheLoai:"Phim hoạt hình"
@@ -33,8 +33,8 @@ let DanhSachPhim = [
         id: 4,
         TenPhim: 'Cùng em bay lượn theo gió',
         nam: 2001,
-        tuoi: "17T",
-        ThoiLuong:"1.2 giờ",
+        tuoi: 17,
+        ThoiLuong: 1.7,
         QuocGia: "Trung Quốc",
         poster: 'cungem.png',
         TheLoai:"Phim Trung Quốc"
@@ -43,50 +43,48 @@ let DanhSachPhim = [
         id: 5,
         TenPhim: 'Cuộc đời của bạch tiểu thư bị tiết lộ rồi',
         nam: 2001,
-        tuoi: "17T",
-        ThoiLuong: "1 giờ",
+        tuoi: 17,
+        ThoiLuong: 1.7,
         QuocGia: "Trung Quốc",
         poster: 'bachtieuthu.png',
         TheLoai:"Phim Trung Quốc"
     },
-    {
-        id: 6,
-        TenPhim: 'minion',
-        nam: 2015,
-        tuoi: "10T",
-        ThoiLuong: "2 giờ",
-        QuocGia: "Mỹ",
-        poster: 'minion.jpg',
-        TheLoai:"Phim hoạt hình"
-    },
-    {
-        id: 7,
-        TenPhim: 'Vương phi xuyên thời gian',
-        nam: 2015,
-        tuoi: "10T",
-        ThoiLuong:"2 giờ",
-        QuocGia: "Trung Quốc",
-        poster: 'vuongphi.png',
-        TheLoai:"Phim Trung Quốc"
-    },
 ];
 
+// let PhimHienTai = DanhSachPhim[0];
+// let banner = document.getElementsByClassName('anh2')[0]
 let nam = document.getElementsByClassName('nam')[0]
 let tuoi = document.getElementsByClassName('tuoi')[0]
 let ThoiLuong = document.getElementsByClassName('thoiluong')[0]
 let QuocGia = document.getElementsByClassName('quocgia')[0]
 
-let banner = document.getElementsByClassName("anh2")[0];
+// function ChonPhim(idPhim){
+//     for(let i = 0; i < DanhSachPhim.length; i++){
+//         if(DanhSachPhim[i].id == idPhim){
+//             banner.style.backgroundImage = DanhSachPhim[i].poster
+//             nam.innerHTML = DanhSachPhim[i].poster
+//         }
+//     }
+// }
 
+let banner = document.getElementsByClassName("anh2")[0];
+// let filmNameElement = document.getElementsByClassName("ten")[0];
+// let filmNationElement = document.getElementsByClassName("tt-nation")[0];
 function XemNgay(){
    let trailer = document.getElementsByClassName("trailer")[0];
+    banner.style.display = "none";
     
-     window.location.href = "https://youtu.be/-nJ0WHEetsQ?si=R4XgLd7ULU0o91kM";
+    //bannerElement.computedStyleMap.display = "none";
+    trailer.style.display = "block";
+    
 }
 
-
 let PhimHienTai = DanhSachPhim[0];
-
+// function chooseFilm(filmId){
+//     let selectedFilm = listFilm.find(film => film.id ===filmId);
+//     bannerElement.style.backgroundImage = "url" + "('" + selectedFilm.banner + "')";
+//     filmNationElement.innerText = selectedFilm.nation;
+// }
 function ChonPhim(id){
     for ( let i = 0; i < DanhSachPhim.length; i ++){
         if ( id == DanhSachPhim[i].id){

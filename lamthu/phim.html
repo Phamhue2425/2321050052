@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Danh mục trang web -->
+            <nav class="danhmuc">
+                <img class="logo" src="/FPT/logo-fpt.png" alt="">
+                <ul class="danhmuc-danhsach">
+                    <li class="danhmuc-lienket"><a href="#">Trang chủ</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Truyền hình</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Phim bộ</a></li>
+                    <li class="danhmuc-lienket"><a href="#">V.League</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Thiếu nhi</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Xem thêm</a></li>
+                </ul>
+            </nav>
+            <!-- Chức năng -->
+            <div class="chucnang">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <div>
+                    <button class="muagoi" >Mua Gói</button>
+                </div>
+                <div>
+                    <button class="dangnhap" >Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="quangcao">
+            <img src="/FPT/fpt-1.jpg" alt="">
+        </div>
+        <div class="container">
+            <div >
+                <div  class="banner" style="display:block; justify-content: center;position: relative; ">
+                    <img class="banner"  src="/FPT/anhbiamuado.jpg" alt="">
+                    <div class="danhsach-tt" style="  position: absolute; bottom:15px; color: white; ; border-radius: 5px; ">
+                       <div class="tt" >
+                            <ul >
+                                <li class="nam" style="list-style: none;">2025</li>
+                                <li class="tuoi">16T</li>
+                                <li class="thoiluong">2 giờ</li>
+                                <li class="nation">Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="xemNgay" style=" padding: 10px;font-size: 18px;background-color: rgb(245, 57, 57);position: absolute;bottom: 5px; left:10px; color: white;border: none;border-radius: 6px;" onclick= "xemNgay()" >Xem ngay</button>
+                </div>
+                <div> <iframe class="trailer" style="height:500px; display: none" width="100%" src="https://www.youtube.com/embed/BD6PoZJdt_M?si=_ASgJlHyXMzHbrVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div style="display: flex; justify-content: center; align-items: start">
+                    <img class="qc" src="/FPT/qc.1.jpg" alt="">
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                    <h2>Phim chiếu rạp</h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim" >
+                        <div class="anh" >
+                            <img onclick="chonPhim(1)" src="350x495-muado.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Mưa đỏ
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh" >
+                            <img onclick="chonPhim(2)" src="diadao.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Địa Đạo
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(3)" src="mangmedibo.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Mang mẹ đi bỏ
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(4)" src="quynhaptrang.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Quỷ nhập tràng
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh" style="height:100">
+                            <img onclick="chonPhim(5)" src="botubaothu.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Bộ tứ báo thủ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="theloai">
+                <div class="tentheloai">
+                    <h2>Cày phim hay mỗi ngày</h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(6)" src="/FPT/Screenshot 2025-09-15 100838.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Gia đình là số một ( Phần 1)
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(7)" src="/FPT/hồ sơ x.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Hồ sơ X
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(8)" src="/FPT/pháp sư vô tâm.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Pháp sư vô tâm
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(9)" src="/FPT/vươhht lên định kiến.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Vượt lên đinh kiến
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(10)" src="/FPT/ngô nhà bí mật.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Ngôi nhà bí mật
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                   <h2> Mới ra mắt</h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(11)" src="tuchientren_khong.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Tử chiến trên không
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(12)" src="waybacklove.jpeg" alt="">
+                        </div>
+                        <div class="ten">
+                            Way back love
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(13)" src="nhagiatien.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Nhà gia tiên
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(14)" src="latmat8.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                           Lật mặt 8
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img onclick="chonPhim(15)" src="botubaothu.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Bộ tứ báo thủ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                   <h2> Phim bộ hot</h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img  src="khododanh.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Khó dỗ dành
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img  style="width:100%; height:350px" src="khomlung.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Khom lưng
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img  src="khucbientauanhtrang.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Khúc biến tấu ánh trăng 
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img  src="laydanhnghianguoinha.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Lấy danh nghĩa người nhà
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img  src="waybacklove.jpeg" alt="">
+                        </div>
+                        <div class="ten">
+                           Way back love
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                   <h2> Phim Việt không thể bỏ lỡ </h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="latmat8.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Lật mặt 8 
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="botubaothu.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Bộ tứ báo thủ
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="diadao.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Địa đạo: Mặt trời trong bóng tối
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="nhagiatien.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Nhà gia tiên
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="/FPT/350x495-muado.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Mưa đỏ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                   <h2> Phim Hoạt Hình</h2>
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="conan.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Conan 
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="lavar.jpg">
+                        </div>
+                        <div class="ten">
+                            Ấu trùng tinh nghịch
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="Mashavagau.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Masha anh gau
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="doreamon.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Doreamon
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="yourname.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Your Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer >
+        <div class="footer-container" style="border-top: ;">
+         <div style="display: flex;">
+            <div class="anh-footer" style="margin-left: 0;" >
+                <img  style="width:200%" src="/FPT/fpt-footer.png"><br>
+                <img style="width:200% " src="/FPT/footer-2.png"><br>
+                <img style="width:200%" src="/FPT/footer-3.png">
+            </div>
+            <div class="nd1-danhsach" >
+                    <div class="nd1-lienket"><a href="">Về FPT PLAY</a></div>
+                    <div class="nd1-lienket"><a href="https://fptplay.vn/gioi-thieu#block-1">Giới thiệu</a></div>
+                    <div class="nd1-lienket"><a href="https://fptplay.vn/gioi-thieu#block-2">Các gói dịch vụ</a></div>
+                    <div class="nd1-lienket"><a href="https://fptplay.vn/gioi-thieu#block-3">Liên hệ</a></div>
+                    <div class="nd1-lienket"><a href="https://hotro.fptplay.vn/hc/vi">Trung tâm hỗ trợ</a></div>
+                    <div class="nd1-lienket"><a href="https://blog.fptplay.vn/">Thông tin</a></div>
+                   
+            </div>
+            <div class="nd1-danhsach" >
+                    <div class="nd1-lienket"><a>Dịch vụ </a></div>
+                    <div class="nd1-lienket"><a href="#">Gói DATA </a></div>
+                    <div class="nd1-lienket"><a href=""> Quảng cáo </a></div>
+                    <div class="nd1-lienket"><a href=""> Mua gói </a></div>
+                    <div class="nd1-lienket"> <a href=""> Bảo hành </a></div>
+            </div>
+            <div class="nd1-danhsach" style="width:20%">
+                    <div class="nd1-lienket"> <a>Quy định</a></div>
+                    <div class="nd1-lienket"><a href="#">Điều khoản sử dụng</a></div>
+                    <div class="nd1-lienket"><a href="">Chính sách thanh toán</a></div>
+                    <div class="nd1-lienket"><a href=""> Chính sách bảo mật thông tin dữ liệu</a></div>
+                    <div class="nd1-lienket"> <a href=""> Cam kết của FPT Telecom </a></div>
+            </div>
+            <div class="nd1-danhsach" style="width:20%">
+                   <div class="nd1-lienket"><a> 19006600 </a></div>
+                    <div class="nd1-lienket"><a > hotrofptplay@fpt.com </a></div>
+                    <div class="nd1-lienket"><a > Theo dõi chúng tôi trên: </a></div>
+                
+            </div>
+
+            </div>
+           
+        <div style="width: 80%; color: white;">
+            <p> Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt Anh. Trụ sở: Tầng 2, Tòa nhà FPT Cầu Giấy, Số 17 Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, TP.Hà Nội</p>
+
+            <p>Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội</p>
+
+            <p>Số điện thoại liên hệ: 024 7300 2222. Thư điện tử: hotrokhachhang@fpt.com hoặc hotrofptplay@fpt.com</p>
+
+
+            <p>Giấy chứng nhận đăng ký doanh nghiệp số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 28/7/2005, cấp đăng ký thay đổi lần thứ 32 vào ngày 21/12/2023.</p>
+
+            <p>Giấy phép cung cấp dịch vụ phát thanh, truyền hình trả tiền số 377/GP-BTTTT cấp sửa đổi bổ sung lần 1 ngày 10/10/2023.</p>
+        </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
